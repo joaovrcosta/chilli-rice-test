@@ -1,0 +1,16 @@
+{
+    "files.exclude": {
+        "node_modules": true,
+        ".vscode": true,
+        ".gitignore": true,
+        "package.json": false,
+        "package-lock.json": true,
+        "public": true,
+        "yarn.lock" : true,
+        "tsconfig.json": false,
+        ".env": true,
+        ".env.local": true,
+        "react-app-env.d.ts": true,
+	"README.md" : true
+    }
+}
