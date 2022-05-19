@@ -1,0 +1,11 @@
+.cartContainer {
+    max-width: 1210px;
+    height: 3.75rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -4,15 +4,22 @@ import { Link } from 'react-router-dom';
 
 export function Header() {
   return (
-    <header className={styles.header}>
-      <nav className={`${styles.nav} container`}>
-        <Link className={styles.logo} to="/cadastrar">
-            Cadastrar
+    <header>
+      <div className={styles.headerContainer}>
+        
+        <h2><a href="/">Chilli Rice</a></h2>
+        <div class="theme">
+        <Link to="/register">
+        <button className={styles.buttonRegister}>Cadastrar</button>
         </Link>
-        <Link className={styles.login} to="/cart">
+        </div>
+        <Link to="/cart">
+        <button class={styles.cartButton}>
+          <img src="./assets/github-logo.svg" alt="" />
           Carrinho
+        </button>
         </Link>
-      </nav>
+      </div>
     </header>
   );
 };
