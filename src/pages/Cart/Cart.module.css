@@ -1,11 +1,116 @@
-.cartContainer {
-    max-width: 1210px;
-    height: 3.75rem;
+/* .cartContainer {
+    max-width: 820px;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    padding: 2rem 2rem;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    border-radius: 5px;
+
+    background-color: #f0f1f4;
 }
+
+.cartContainer {
+    padding: 30px;
+    border-radius: 4px;
+} */
+
+.cartContainer {
+    max-width: 820px;
+    padding: 30px;
+    background: #f0f1f4;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.productTable {
+    width: 100%;
+}
+
+.productTable thead th {
+    color: #999;
+    text-align: left;
+    padding: 12px;
+}
+
+.productTable tbody td {
+    padding: 12px;
+    border-bottom: 1px solid rgb(20, 20, 20);
+}
+
+.productTable strong {
+    color: #333;
+    display: block;
+}
+
+.productTable span {
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.productTable div {
+    display: flex;
+    align-items: center;
+}
+
+.productTable div input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #666;
+    padding: 6px;
+    width: 50px;
+}
+
+.decrementIcon {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.total {
+    display: flex;
+    align-items: baseline;
+}
+
+.total span {
+    color: #999;
+    font-weight: bold;
+}
+
+.total strong {
+    font-size: 28px;
+    margin-left: 1rem;
+}
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer button {
+    background: #00a6ff;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background: #028cd7;
+    transition: 0.4s;
+}
+

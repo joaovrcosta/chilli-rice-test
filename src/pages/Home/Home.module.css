@@ -9,3 +9,32 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.productCard {
+    margin-top: 15rem;
+    width: 200px;
+    height: 220px;
+    padding: 5px 15px;
+    background-color: #f0f1f4;
+    border-radius:  5px;
+}
+
+.productCard button {
+    margin-top: 4rem;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: #00a6ff ;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.productCard button:focus {
+    border: 2px solid #004c75
+}
+
+.productCard button:hover {
+    background-color: #0093e2 ;
+    transition: 0.4s;
+}

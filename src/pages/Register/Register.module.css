@@ -1,11 +1,71 @@
 .registerContainer {
-    max-width: 1210px;
-    height: 3.75rem;
+    max-width: 600px;
+    padding: 30px;
+    background: #f0f1f4;
+    border-radius: 4px;
     margin: 0 auto;
-    padding: 0 2rem;
-    margin-top: 2rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-top: 5rem;
 }
+
+form .cardBox {
+    height: 52px;
+    margin: 18px 0;
+}
+
+form .cardBox input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: 400;
+    font-family: Inter;
+    background-color: #fafafa;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+form .cardBox select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: 400;
+    font-family: Inter;
+    background-color: #fafafa;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button {
+    height: 40px;
+    width: 100%; 
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #00a6ff;
+    color: white;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0092e0;
+}
+
+form input:focus {
+    border: 2px solid #00a6ff;
+    transition: 0.05s;
+}
+
+form select:focus {
+    border: 2px solid #00a6ff;
+    transition: 0.05s;
+}
+

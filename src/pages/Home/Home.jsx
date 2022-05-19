@@ -1,15 +1,35 @@
 // import style from './Home.module.scss'
-import data from '../../database/Data'
-import styles from './Home.module.css';
+import styles from "./Home.module.css";
 
+const Home = () => {
+  return (
+    <div className={styles.homeContainer}>
+      {/* {productItems.map((productItems) => () */}
+      <div className={styles.productCard}>
+        <h3 class={styles.productName}>Oculos de Grau</h3>
+        <p>Preço: 342</p>
+        <button>Comprar</button>
+      </div>
 
-export function Home() {
-    const { productItems } = data;
+      <div className={styles.productCard}>
+        <h3 class={styles.productName}>Oculos de Grau</h3>
+        <p>Preço: 342</p>
+        <button>Comprar</button>
+      </div>
 
+      <div className={styles.productCard}>
+        <h3 class={styles.productName}>Oculos de Grau</h3>
+        <p>Preço: 342</p>
+        <button>Comprar</button>
+      </div>
 
-    return (
-        <div className={styles.homeContainer}>
-            <h1>Home</h1>
-        </div>
-    )
-}
+      <div className={styles.productCard}>
+        <h3 class={styles.productName}>Oculos de Grau</h3>
+        <p>Preço: 342</p>
+        <button>Comprar</button>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
