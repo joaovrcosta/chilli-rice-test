@@ -114,3 +114,8 @@ footer button:hover {
     transition: 0.4s;
 }
 
+.promotionBox {
+    background-color: #a7ffbd;
+    padding: 8px;
+    border-radius: 6px;
+}

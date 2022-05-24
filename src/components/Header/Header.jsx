@@ -10,7 +10,7 @@ export function Header() {
       <div className={styles.headerContainer}>
         
         <><a href="/"><img src={logoChilli} className={styles.chilliLogo} alt="" /></a></>
-        <div class="theme">
+        <div className="theme">
         <Link to="/register">
         <button className={styles.buttonRegister}>Cadastrar</button>
         </Link>
