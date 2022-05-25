@@ -55,10 +55,10 @@ export function Cart() {
       <div className={styles.productTable}>
         <thead>
           <tr>
-            <th>PRODUTO</th>
-            <th>QTD</th>
-            <th>SUBTOTAL</th>
-            <th>PROMOÇÃO</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Subtotal</th>
+            <th>Promoção</th>
             <th src={deleteIcon} />
           </tr>
         </thead>
@@ -122,7 +122,7 @@ export function Cart() {
       <footer>
         <button type="button">Finalizar pedido</button>
         <div className={styles.total}>
-          <span>TOTAL</span>
+          <span>Total</span>
           <strong>{formatValue.format(total)}</strong>
         </div>
       </footer>

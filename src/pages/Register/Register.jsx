@@ -53,6 +53,7 @@ export function Register() {
               placeholder="Nome do produto"
               value={name}
               onChange={(event) => setName(event.target.value)}
+              required
             />
           </div>
           <div className={styles.cardBox}>
@@ -61,6 +62,7 @@ export function Register() {
               placeholder="Descrição de produto"
               value={description}
               onChange={(event) => setDescription(event.target.value)}
+              required
             />
           </div>
           <div className={styles.cardBox}>
@@ -69,6 +71,7 @@ export function Register() {
               placeholder="Preço do produto"
               value={price}
               onChange={(event) => setPrice(event.target.value)}
+              required
             />
           </div>
           <div className={styles.cardBox}>

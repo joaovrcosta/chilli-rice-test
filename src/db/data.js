@@ -2,21 +2,22 @@ export const items = [
   {
     id: 1,
     name: "Oculos de Gráu",
-    price: "R$5,00",
+    description: "otimo oculos",
+    price: 5,
   },
   {
     id: 2,
     name: "Oculos de Sol",
-    price: "R$4,00",
+    price: 4,
   },
   {
     id: 3,
     name: "Oculos Gucci",
-    price: "R$7,00",
+    price: 7,
   },
   {
     id: 4,
     name: "Óculos Versace",
-    price: "R$6,00"
+    price: 6
   },
 ];

@@ -1,11 +1,12 @@
 
 header {
   max-width: 1920px;
-  border-bottom: 1px solid #29292e;
+  border-bottom: 1px solid #d5d5d5;
   margin: 0 auto;
   background-color: var(--background);
   transition: 0.5s;
 }
+
 
 header .chilliLogo {
   font-family: Rubik;
@@ -15,7 +16,7 @@ header .chilliLogo {
 }
 
 .headerContainer{
-  max-width: 1210px;
+  max-width: 1580px;
   height: 3.75rem;
   margin: 0 auto;
   padding: 0 2rem;
@@ -23,24 +24,29 @@ header .chilliLogo {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+}
+
+.headerContainerOne {
+  background-color: #fff159;
 }
 
 .buttonRegister {
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
   border: none;
   height: 40px;
   width: 120px;
   cursor: pointer;
   margin-right: 30px;
-  font-weight: 600;
+  font-weight: 300;
   background-color: transparent;
-  color: #6e6e7b
+  color: #000000
 }
 
 .buttonRegister:hover {
   border-bottom: #ff83e0;
-  color: #ffffff 
+  color: #8b8b8b 
 }
 
 .cartButton {
