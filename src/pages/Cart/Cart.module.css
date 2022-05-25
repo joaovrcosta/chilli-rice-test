@@ -22,7 +22,7 @@
 .cartContainer {
     max-width: 820px;
     padding: 30px;
-    background: #f0f1f4;
+    background: #202024;
     border-radius: 4px;
     margin: 0 auto;
     margin-top: 5rem;
@@ -44,7 +44,7 @@
 }
 
 .productTable strong {
-    color: #333;
+    color: #00a6ff;
     display: block;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .total span {
-    color: #999;
+    color: #00a6ff;
     font-weight: bold;
 }
 

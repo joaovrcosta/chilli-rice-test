@@ -12,17 +12,21 @@ export function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (promotion_id === "Sem promoção") {
-      setPromotion_id(null);
-      console.log("Entrou no if");
-    }
+    console.log(promotion_id.includes("NoPromotion"));
+
+    // if (promotion_id === "NoPromotion") {
+    //   setPromotion_id(null);
+    //   console.log("Entrou no if")
+    // }
+
+    console.log("Depois", promotion_id);
 
     axios
       .post("http://localhost:4444/products", {
         name,
         description,
         price,
-        promotion_id,
+        promotion_id: promotion_id === "NoPromotion" ? null : promotion_id,
       })
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
@@ -68,18 +72,15 @@ export function Register() {
             />
           </div>
           <div className={styles.cardBox}>
+            <label htmlFor="">Selecione uma promoção</label>
             <select
               name=""
               id=""
               value={promotion_id}
               onChange={(event) => setPromotion_id(event.target.value)}
             >
-              <option value="0" selected disabled>
-                Selecione uma Promoção:
-              </option>
-              <option value={"Sem promoção"}>Sem promoção</option>
-              {/* <option value="8511a5fd-8195-4d5a-a449-342598e0d6d0">2 pelo preço de 1</option> */}
-              {/* <option value="ea5d779a-5b96-490e-aaab-283408770b2e">3 pelo preço de 10</option> */}
+              <option value="" selected disabled>Promoção:</option>
+              <option value="NoPromotion">Sem promoção</option>
               {promotions.map((promotion) => (
                 <option value={promotion.id}>{promotion.name}</option>
               ))}

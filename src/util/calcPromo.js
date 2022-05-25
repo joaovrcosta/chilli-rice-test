@@ -11,7 +11,7 @@ export function calcPromo(price, quantity, { compre, pague, type }) {
 
     totalValue = promo + rest;
   } else {
-    totalValue = quantity * price;
+    totalValue = quantity * price  ;
   }
   return totalValue;
 }

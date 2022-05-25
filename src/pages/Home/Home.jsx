@@ -8,6 +8,11 @@ const Home = () => {
   const [products, setProducts] = useState([]);
   const [promotion, setPromotion] = useState([]);
 
+  const formatValue = new Intl.NumberFormat("pt-br", {
+    style: "currency",
+    currency: "BRL",
+  });
+
   useEffect(() => {
     axios.get("http://localhost:4444/products/list").then((res) => {
       setProducts(res.data);
@@ -29,15 +34,15 @@ const Home = () => {
       {products.map((item, key) => (
         <div key={key} className={styles.productCard}>
           <h3 className={styles.productName}>{item.name}</h3>
-          <p>{item.description}</p>
-          <p>
-            Preço: <strong>{item.price}</strong>
+          <p >{item.description}</p>
+          <p className={styles.productPrice}>
+            Preço: <strong>{formatValue.format(item.price)}</strong>
           </p>
           {promotion.map((promotion) => {
             if (promotion.id === item.promotion_id) {
               return (
-                <p>
-                  Promoção <strong>{promotion.name}</strong>
+                <p className={styles.promoPrice}>
+                  <strong>{promotion.name}</strong>
                 </p>
               );
             }
