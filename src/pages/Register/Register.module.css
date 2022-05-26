@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.registerContainer {
+    max-width: 600px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-top: 6.25rem;
+}
+
+h1 {
+    color:#181818;
+    font-weight: 400;
+    font-family: Helvetica;
+}
+
+form .cardBox {
+    height: 52px;
+    margin: 18px 0;
+}
+
+label {
+    color: #000000;
+}
+
+form .cardBox input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: 400;
+    font-family: Rubik;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    color: #000000;
+    border: 1px solid #bfbfbf;
+}
+
+form .cardBox select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: 400;
+    font-family: Rubik;
+    color: #1b1b1b;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #bfbfbf;
+}
+
+form button {
+    height: 50px;
+    width: 100%; 
+    margin-top: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3483fa;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Rubik;
+    
+}
+
+form button:hover {
+    background-color: #005be2;
+    transition: 0.6s;
+}
+
+form input:focus {
+    border: 2px solid #00a6ff;;
+    transition: 0.05s;
+    cursor: pointer;
+}
+
+form select:focus {
+    border: 2px solid #008ad4; 
+    transition: 0.05s;
+}
+
