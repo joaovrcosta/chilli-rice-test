@@ -3,7 +3,10 @@ export const items = [
     id: 1,
     name: "Oculos de Gráu",
     description: "Lindos óculos para o dia a dia",
+<<<<<<< HEAD
     promotion_id: "3a769bc8-16c4-4640-addb-140fa6d8c5c6",
+=======
+>>>>>>> 3faa3a864a5f83cbb510e1ebc0df8ffcb7f4f400
     price: 159,
   },
   {

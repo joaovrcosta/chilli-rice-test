@@ -3,7 +3,10 @@ import { useContext, useEffect, useState } from "react";
 import { UseCart } from "../../hooks/CartContext/useCart";
 import styles from "./Home.module.css";
 import axios from "axios";
+<<<<<<< HEAD
 // import { items } from "../../db/data";
+=======
+>>>>>>> 3faa3a864a5f83cbb510e1ebc0df8ffcb7f4f400
 
 const Home = () => {
   const [products, setProducts] = useState([]);
