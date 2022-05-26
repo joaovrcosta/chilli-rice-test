@@ -6,6 +6,7 @@ import { Cart } from "./pages/Cart/Cart";
 import Home from "./pages/Home/Home";
 import { Register } from "./pages/Register/Register";
 import { CartProvider } from "./hooks/CartContext/useCart";
+import { Finally } from "./pages/FinallyBuy/Finally";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/finally" element={<Finally />} />
           </Routes>
         </CartProvider>
       </BrowserRouter>

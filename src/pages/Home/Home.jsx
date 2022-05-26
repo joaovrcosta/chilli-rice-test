@@ -33,11 +33,13 @@ const Home = () => {
     <div className={styles.homeContainer}>
       {products.map((item, key) => (
         <div key={key} className={styles.productCard}>
-          <h3 className={styles.productName}>{item.name}</h3>
-          <p >{item.description}</p>
-          <p className={styles.productPrice}>
-            Preço: <strong>{formatValue.format(item.price)}</strong>
-          </p>
+          <div className={styles.productCardText}>
+            <h3 className={styles.productName}>{item.name}</h3>
+            <p>{item.description}</p>
+            <p className={styles.productPrice}>
+              <strong>{formatValue.format(item.price)}</strong>
+            </p>
+          </div>
           {promotion.map((promotion) => {
             if (promotion.id === item.promotion_id) {
               return (
@@ -47,7 +49,6 @@ const Home = () => {
               );
             }
           })}
-
           <button
             disabled={cart.find((cartItem) => item.id === cartItem.id)}
             onClick={() => handleAddItemCart(item)}

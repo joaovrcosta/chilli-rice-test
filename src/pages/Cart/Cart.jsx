@@ -7,6 +7,7 @@ import { useContext, useEffect, useState } from "react";
 import { UseCart } from "../../hooks/CartContext/useCart";
 import axios from "axios";
 import { calcPromo } from "../../util/calcPromo";
+import { Link } from "react-router-dom";
 
 export function Cart() {
   const { cart, handleSetTotal, total, removeProduct, handleProductIncrement, handleProductDecrement } = useContext(UseCart);
@@ -64,8 +65,8 @@ export function Cart() {
         </thead>
         <tbody>
           {cart.map((item) => (
-            <tr key={item.id}>
-              <td >
+            <tr  className={styles.tdBoxs} key={item.id}>
+              <td>
                 <strong>{item.name}</strong>
                 <span>{formatValue.format(item.price)}</span>
               </td>
@@ -88,7 +89,7 @@ export function Cart() {
                   </button>
                 </div>
               </td>
-              <td>
+              <td className={styles.subTotalStyle}>
                 <strong>{formatValue.format(item.price)}</strong>
               </td>
               {promotions.map((promotion) => {
@@ -96,7 +97,7 @@ export function Cart() {
                   return (
                     <td>
                       <strong className={styles.promotionBox}>
-                        {promotion.name}
+                        <p>{promotion.name}</p>
                       </strong>
                     </td>
                   );
@@ -120,7 +121,9 @@ export function Cart() {
       </div>
 
       <footer>
+        <Link to ="/finally">
         <button type="button">Finalizar pedido</button>
+        </Link>
         <div className={styles.total}>
           <span>Total</span>
           <strong>{formatValue.format(total)}</strong>

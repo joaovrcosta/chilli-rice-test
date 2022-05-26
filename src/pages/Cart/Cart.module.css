@@ -26,6 +26,7 @@
     margin: 0 auto;
     margin-top: 2rem;
     box-shadow: 0 1px 2px 0 #737373;
+    margin-top: 6.25rem;
 }
 
 .productTable {
@@ -41,11 +42,18 @@
 
 .productTable tbody td {
     padding: 12px;
-    border-bottom: 1px solid rgb(20, 20, 20);
+    border-bottom: 1px solid #e5e5e5;
 }
 
+.productTable tbody .tdBoxs:hover {
+    padding: 12px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fbfbfb;
+}
+
+
 .productTable strong {
-    color: #00a6ff;
+    color: #3483fa;
     display: block;
 }
 
@@ -109,20 +117,35 @@ footer button {
     border: transparent;
     border-radius: 4px;
     padding: 12px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
     transition: 0.2s;
     font-size: 18px;
     cursor: pointer;
 }
 
 footer button:hover {
-    background: #028cd7;
+    background: #0066ff;;
     transition: 0.4s;
 }
 
+footer button:focus {
+    border: 1px solid #c8c8c8;
+}
+
 .promotionBox {
-    background-color: #a7ffbd;
+    background-color: #f73;
+    font-size: 12px;
     padding: 8px;
     border-radius: 6px;
+    text-transform: uppercase;
+    font-family: Helvetica;
+}
+
+.promotionBox p {
+    color: white;
+    font-weight: 400;
+    font-family: Helvetica;
+}
+
+.subTotalStyle strong {
+    color: #1b1b1b;
 }

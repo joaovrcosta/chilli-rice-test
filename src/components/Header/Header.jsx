@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
-import cartIcon from '../../assets/images/cart.svg'
+import cartIcon from '../../assets/images/Shopping-cart.svg'
 import logoChilli from '../../assets/images/logo-pt__large_plus.png'
 
 export function Header() {

@@ -7,11 +7,13 @@
     border-radius: 6px;
     margin: 0 auto;
     margin-top: 5rem;
+    margin-top: 6.25rem;
 }
 
 h1 {
     color:#181818;
     font-weight: 400;
+    font-family: Helvetica;
 }
 
 form .cardBox {
@@ -73,7 +75,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #0092e0;
+    background-color: #005be2;
     transition: 0.6s;
 }
 

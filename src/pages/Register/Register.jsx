@@ -77,6 +77,7 @@ export function Register() {
           <div className={styles.cardBox}>
             <label htmlFor="">Selecione uma promoção</label>
             <select
+              required
               name=""
               id=""
               value={promotion_id}
